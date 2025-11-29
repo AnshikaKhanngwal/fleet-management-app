@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Enter Email" id="emailinput" required>
+         <input type="text" placeholder="Enter Password" id="Passwordinput" required>
+        <input type="button" value="Login" onclick="login()">
+    </div>
+</body>
+<script>
+    let rightemail="admin@gmail.com"
+    let rightpassword="admin1234"
+    const email=document.getElementById("emailinput").value
+    const Password=document.getElementById("Passwordinput").value
+    function login(){
+    if(email.trim()==rightemail){
+           window.alert("Login success")   
+       }
+       window.location.href="admin.html" 
+}   
+    //else if{
+       //   window.alert("Wrong email or password")
+        //}
+</script>
+</html>

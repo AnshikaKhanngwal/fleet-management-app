@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .sidebar{
+       display: flex;
+       flex-direction: row;
+       justify-content: left;
+       align-items: center;
+       margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <form >
+            <input type="text"  id="range" placeholder="Reg No of Vehicle"><br><br>
+             <select id="category">
+                <option value="Auto">Auto</option>
+                 <option value="car">Car</option>
+                 <option value="Truck">Truck</option>
+                 <option value="Bus">Bus</option>
+             </select><br><br>
+             <input type="text" id="drivername" placeholder="Driver Name"><br><br>
+             <select  id="Auailable">
+                <option value="Available">Availabe</option>
+                 <option value="Unavailable">Unavailabe</option>
+             </select>
+        </form>
+      
+    </div> <br><br><br>
+     <button onclick="back()">Go to home</button>
+</body>
+<script>
+    function back(){
+        window.location.href="index.html"
+    }
+</script>
+</html>
