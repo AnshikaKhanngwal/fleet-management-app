@@ -36,10 +36,12 @@
         </form>
       
     </div> <br><br><br>
+
+    <div id="container"></div>
      <button onclick="back()">Go to home</button>
 </body>
 <script>
-    let details=[]
+        let details=[]
     function back(){
         window.location.href="index.html"
     }
@@ -61,9 +63,29 @@ function addfleet(){
 }
   
 function renderdetail(){
-    const card =documet.createElement("Card")
+    const card =documet.createElement("Div")
 
-    
+    card.innerHTML="";
+
+    const vehical=createElement("p")
+    vehical.textcontent=detail.VehicleRange
+
+    const category=createElement("p")
+    category.textcontent=detail.category
+
+    const drivername=createElement("p")
+    drivernaem.textcontent=Drivername
+
+    const available=createElement("p")
+    availabe.textcontent=availabe
+
+   card.appendchild(vehical);
+   card.appendchild(category);
+   card.appendchild(drivername);
+   card.appendchild(availabe)
+  
+
+   container.appendchild(card)
 }
 
  
