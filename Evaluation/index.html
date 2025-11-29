@@ -43,10 +43,16 @@
     let rightpassword="admin1234"
     const email=document.getElementById("emailinput").value
     const Password=document.getElementById("Passwordinput").value
+  
 
+    if(rightemail=="admin@gmail.com" && rightpassword=="admin1234"){
+        let flag=true;
+    }
 function login(){
+          if(flag=true){
            window.alert("Login success");
             window.location.href="admin.html" 
+            }
        }
     
   
